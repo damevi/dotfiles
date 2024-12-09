@@ -1,0 +1,25 @@
+live_config_reload = true
+
+# themes from https://github.com/alacritty/alacritty-theme
+
+import = ["/Users/uciek/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[shell]
+program = "/Users/uciek/.local/bin/fish"
+
+[font]
+size = 17
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[window]
+opacity = 0.90
+decorations = "Buttonless"
+startup_mode = "Maximized"
+option_as_alt= "OnlyLeft"
+
+
+[window.padding]
+x = 7
+y = 0
