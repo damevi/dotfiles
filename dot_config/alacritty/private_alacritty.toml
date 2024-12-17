@@ -1,10 +1,5 @@
-live_config_reload = true
 
-# themes from https://github.com/alacritty/alacritty-theme
-
-import = ["/Users/uciek/.config/alacritty/themes/themes/gruvbox_dark.toml"]
-
-[shell]
+[terminal.shell]
 program = "/Users/uciek/.local/bin/fish"
 
 [font]
@@ -23,3 +18,12 @@ option_as_alt= "OnlyLeft"
 [window.padding]
 x = 7
 y = 0
+
+[general]
+live_config_reload = true
+
+# themes from https://github.com/alacritty/alacritty-theme
+
+import = ["/Users/uciek/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[terminal]
