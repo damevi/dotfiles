@@ -193,6 +193,7 @@ return {
         emmet_ls = {},
         ruff = {},
         --
+        ruby_lsp = {},
 
         lua_ls = {
           -- cmd = {...},
