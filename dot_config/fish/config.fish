@@ -1,6 +1,8 @@
+/opt/homebrew/bin/brew shellenv | source
 set fish_greeting ""
 
 fish_add_path /opt/homebrew/bin
+fish_add_path $HOME/go/bin
 
 # set -gx TERM xterm-256color
 set -x DENO_INSTALL /Users/uciek/.deno
