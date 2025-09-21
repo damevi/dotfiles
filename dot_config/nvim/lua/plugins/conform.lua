@@ -5,6 +5,9 @@ return {
   opts = function()
     local opts = {
       formatters_by_ft = {
+        go = {"gofmt"},
+        elixir = { "mix" },
+        heex = { "mix" },
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
