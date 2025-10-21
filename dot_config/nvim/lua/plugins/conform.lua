@@ -5,7 +5,7 @@ return {
   opts = function()
     local opts = {
       formatters_by_ft = {
-        go = {"gofmt"},
+        go = { "gofmt" },
         elixir = { "mix" },
         heex = { "mix" },
         javascript = { "prettier" },
@@ -18,7 +18,7 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         graphql = { "prettier" },
-        rust = {"rustfmt"},
+        rust = { "rustfmt" },
       },
       -- formatters = {
       --   prettier = {

@@ -4,5 +4,5 @@
 
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Center on page up" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Center on page down" })
--- vim.keymap.set({ "n", "x", "o" }, "L", "$", { desc = "Move to the end of the line" })
--- vim.keymap.set({ "n", "x", "o" }, "H", "^", { desc = "Move to the beginning of the line" })
+vim.keymap.set({ "n", "x", "o" }, "L", "$", { desc = "Move to the end of the line" })
+vim.keymap.set({ "n", "x", "o" }, "H", "^", { desc = "Move to the beginning of the line" })
