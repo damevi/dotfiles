@@ -18,6 +18,7 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         graphql = { "prettier" },
+        rust = {"rustfmt"},
       },
       -- formatters = {
       --   prettier = {

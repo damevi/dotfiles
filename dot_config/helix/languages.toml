@@ -1,52 +1,13 @@
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
 [[language]]
 name = "ruby"
-scope = "source.ruby"
-injection-regex = "ruby"
-file-types = [
-  "rb",
-  "rake",
-  "rakefile",
-  "irb",
-  "gemfile",
-  "gemspec",
-  "Rakefile",
-  "Gemfile",
-  "rabl",
-  "jbuilder",
-  "feature",
-  "jb",
-  "Podfile",
-  "podspec",
-  "Vagrantfile",
-  "Brewfile",
-  "rjs",
-  "rbi",
-  "Guardfile",
-  "Capfile",
-  "Cheffile",
-  "Hobofile",
-  "Appraisals",
-  "Rantfile",
-  "Berksfile",
-  "Berksfile.lock",
-  "Thorfile",
-  "Puppetfile",
-  "Fastfile",
-  "Appfile",
-  "Deliverfile",
-  "Matchfile",
-  "Scanfile",
-  "Snapfile",
-  "Gymfile"
-]
-shebangs = ["ruby"]
-comment-token = "#"
-language-servers = ["solargraph", "scls", "rust-analyzer"]
-indent = { tab-width = 2, unit = "  " }
+file-types = ["rb", "ruby", "rakefile", "Gemfile", "Rakefile", "Capfile"]
+language-servers = ["ruby-lsp"]
+auto-format = true
 
-[[grammar]]
-name = "ruby"
-source = { git = "https://github.com/tree-sitter/tree-sitter-ruby", rev = "206c7077164372c596ffa8eaadb9435c28941364" }
 
 
 [language-server.scls]

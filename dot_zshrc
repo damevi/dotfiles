@@ -87,7 +87,9 @@ alias gh="git push origin head"
 alias gs="git status"
 alias gd='git diff'
 alias gf="git fetch"
-alias ls="eza -l"
+alias ls="eza -l --all --icons=always"
+
+alias cc="cargo check"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
