@@ -22,7 +22,7 @@ alias n="nvim"
 alias g="git"
 alias gh="git push origin head"
 
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(/usr/bin/mise activate zsh)"
 
 new_tmux () {
   session_dir=$(zoxide query --list | fzf)
