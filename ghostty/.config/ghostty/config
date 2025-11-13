@@ -1,0 +1,8 @@
+theme = catppuccin-mocha
+# font-family = "Hack Nerd Font Mono, JetBrains Mono"
+font-size = 16
+macos-option-as-alt = left
+background-opacity-cells = true
+background-opacity = 0.95
+gtk-titlebar = false
+
