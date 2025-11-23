@@ -1,4 +1,5 @@
-theme = "rose_pine_moon"
+# theme = "rose_pine_moon"
+theme = "everforest_dark"
 
 [editor]
 scrolloff=8
