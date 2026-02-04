@@ -1,22 +1,34 @@
-# [language-server.ruby-lsp]
-# command = "ruby-lsp"
-# config = { diagnostics = true, formatting = true }
+[[language]]
+name = "erb"
+language-servers = [ { name = "ruby-lsp", only-features = ["format", "diagnostics"]}, {name = "solargraph", except-features = ["format", "diagnostics"]}, "emmet-ls", "tailwindcss-ls"]
+file-types = ["erb", "html"]
+formatter = { command = "prettier", args = ["--parser", "erb-template"] }
+auto-format = true
 
-# [[language]]
-# name = "ruby"
-# file-types = ["rb", "ruby", "rakefile", "Gemfile", "Rakefile", "Capfile"]
-# language-servers = ["ruby-lsp"]
-# auto-format = true
+[language.auto-pairs]
+'<' = '>'
+'%' = '%'
+"'" = "'"
+'"' = '"'
 
-[language-server.standardrb]
-command = "standardrb"
-args = ["--lsp"]
+[language-server.ruby-lsp]
+command = "ruby-lsp"
 
 [[language]]
 name = "ruby"
+language-servers = ["ruby-lsp", "solargraph"]
 auto-format = true
-language-servers = [ "solargraph", "standardrb" ]
+formatter = { command = "rufo", args = ["--simple-exit"] }
+###
 
+# [language-server.ruby-lsp]
+# command = "ruby-lsp"
+
+# [[language]]
+# name = "ruby"
+# language-servers = ["ruby-lsp", "solargraph"]
+# auto-format = true
+# formatter = {command = "rufo", args = ["--simple-exit"]}
 
 [language-server.scls]
 command = "simple-completion-language-server"

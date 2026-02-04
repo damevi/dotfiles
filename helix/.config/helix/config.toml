@@ -9,6 +9,11 @@ true-color = true
 rulers = [120]
 # bufferline = "always"
 idle-timeout = 50
+end-of-line-diagnostics = "warning"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
 
 [editor.soft-wrap]
 enable = true
@@ -57,7 +62,3 @@ display-messages = true
 left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
 center = []
 right = ["selections", "primary-selection-length", "position", "position-percentage", "spacer", "diagnostics", "workspace-diagnostics", "version-control"]
-
-[editor.inline-diagnostics]
-cursor-line = "hint"
-other-lines = "error"

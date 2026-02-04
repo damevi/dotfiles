@@ -1,3 +1,4 @@
+export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 # # Auto-start/attach tmux
@@ -22,7 +23,7 @@ alias n="nvim"
 alias g="git"
 alias gh="git push origin head"
 
-eval "$(/usr/bin/mise activate zsh)"
+eval "$(~/.local/bin/mise activate zsh)"
 
 new_tmux () {
   session_dir=$(zoxide query --list | fzf)
@@ -51,3 +52,5 @@ new_tmux () {
 }
 
 alias tm=new_tmux
+eval "$(~/.local/bin/mise activate)"
+export HELIX_RUNTIME=~/src/helix/runtime
