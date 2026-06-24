@@ -1,3 +1,4 @@
 [tools]
 erlang = "latest"
 elixir = "latest"
+node = "lts"
