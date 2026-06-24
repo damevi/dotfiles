@@ -2,7 +2,6 @@
 export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
-export HELIX_RUNTIME="$HOME/src/helix/runtime"
 
 # History settings
 HISTFILE=~/.history
@@ -29,6 +28,7 @@ fi
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 source <(fzf --zsh)
 
 # --- 4. Aliases ---
@@ -68,3 +68,4 @@ new_tmux () {
     # Use the cross-platform notify function
     notify "$notification"
 }
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
