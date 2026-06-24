@@ -6,9 +6,17 @@ plug "zap-zsh/supercharge"
 plug "zap-users/zsh-syntax-highlighting"
 plug "wintermi/zsh-brew"
 plug "MichaelAquilina/zsh-you-should-use"
+plug "zsh-users/zsh-history-substring-search"
 
 autoload -Uz compinit
 compinit
+
+# Bind up/down (and ctrl-p/ctrl-n) to prefix-filtered history search:
+# type "z", then up/down cycles only commands starting with "z"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
 
 # --- Tool Initializations ---
 command -v mise &> /dev/null && eval "$(mise activate zsh)"
