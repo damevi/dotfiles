@@ -4,4 +4,5 @@ macos-option-as-alt = left
 background-opacity-cells = true
 background-opacity = 0.95
 gtk-titlebar = false
+quit-after-last-window-closed = true
 
